@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/javascript/app.js"></script>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="display-4">New York Times Search</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="section-header">Search Parameters</p>
+                <form>
+                    <div class="form-group">
+                        <label for="search-term">Search Term:</label>
+                        <input type="text" class="form-control" id="search-term">
+                    </div>
+                    <div class="form-group">
+                        <label for="number-of-records">Number of Records to Retrieve</label>
+                        <select class="form-control" id="number-of-records">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="start-year">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="start-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="end-year">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="end-year">
+                    </div>
+                    <button id="submit" type="submit" class="btn btn-primary">Search</button>
+                    <button id="clear" type="reset" class="btn btn-primary">Clear</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="section-header">Top Articles</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
