@@ -13,4 +13,5 @@ $("button").on("click", function() {
         currentSearch = new searchObject($("#search-term").val(),$("#number-of-records").val(),$("#start-year").val(),$("#end-year").val());
         console.log(currentSearch);
     }
+
 })
